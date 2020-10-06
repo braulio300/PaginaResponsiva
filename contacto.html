@@ -1,0 +1,142 @@
+<html>
+	<head>
+		<title>Brothers Producciones</title>
+		<link rel="icon" type="image/png" href="img/iconoBP.png">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>		
+    <script src="JavaScript.js"></script>
+  </head>
+    
+    <body>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" tabindex="-1" aria-disabled="true">BROTHER´S</a>
+            </li>
+          </ul>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="evento.html">Eventos<span class="sr-only">(current)</span></a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html" tabindex="-1" aria-disabled="true">Servicios</a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html" tabindex="-1" aria-disabled="true">Nosotros</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html" tabindex="-1" aria-disabled="true">Contacto</a>
+              </li>
+            </ul>
+          </div>         
+    </div>
+      
+        
+        <br><br>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <h2>Contactanos</h2>
+          </div>
+
+        </div>
+    <br>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-2 offset-md-3" style="font-weight: bold;"> Correo</div>
+          <div class="col-12 col-md-4">
+            <input type="text" name= "txtCorreo" class="txtCorreo form-control " placeholder="Usuario@dominio.com" required>
+          </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-12 col-md-2 offset-md-3" style="font-weight: bold;"> RUN</div>
+          <div class="col-12 col-md-4">
+            <input type="text" name= "txtRUN" class="txtRUN form-control" placeholder="Ingrese Rut sin puntos ni comas" maxlength="10" required>
+          </div>
+      </div>
+      
+      <form action="">
+      <div class="row">
+        <div class="col-12 col-md-2 offset-md-3" style="font-weight: bold;"> Nombre</div>
+          <div class="col-12 col-md-4">
+            <input type="text" name= "txtNombre" class="txtNombre form-control" placeholder="ejemplo: Nicol Meza Herrera Ferruviaro" required>
+          </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-12 col-md-2 offset-md-3" style="font-weight: bold;"> Fecha Nacimiento</div>
+          <div class="col-12 col-md-4">
+            <input type="date" name= "dateFecha" class="dateFecha form-control" required>
+          </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-12 col-md-2 offset-md-3" style="font-weight: bold;"> Teléfono</div>
+          <div class="col-12 col-md-4">
+            <input type="text" name= "txtTelefono" class="txtTelefono form-control" placeholder="ej: 61432567" maxlength="9" required>
+          </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-12 col-md-2 offset-md-3" style="font-weight: bold;"> Región</div>
+        <div class="col-12 col-md-4">
+          <select  name= "cmbRegion" class="cmbRegion form-control" required>
+            <option value="" disabled selected>Seleccionar</option> ==$0
+            <option value="Metropolitana de Santiago">Metropolitana de Santiago</option>
+            <option value="Valparaíso">Valparaíso</option>
+          </select>
+        </div>
+      </div>
+        
+      <div class="row">
+        <div class="col-12 col-md-2 offset-md-3" style="font-weight: bold;"> Ciudad</div>
+          <div class="col-12 col-md-4">
+            <select  name= "cmbCiudad" class="cmbCiudad form-control" required>
+              <option value="" disabled selected>Seleccionar</option> ==$0
+              <option value="Santiago">Santiago</option>
+              <option value="Viña">Viña</option>
+            </select>
+          </div>
+        </div>
+      
+      <div class="row">
+        <div class="col-12 col-md-2 offset-md-3" style="font-weight: bold;">Educación</div>
+          <div class="col-12 col-md-4">
+            <select  name= "cmbEducacion" class="cmbEducacion form-control" required>
+              <option value="" disabled selected>Seleccionar</option> ==$0
+              <option value="Doctor">Doctor</option>
+              <option value="Magister">Magíster</option>
+              <option value="Profesional">Profesional</option>
+              <option value="EnseñanzaMedia">E.media</option>
+              <option value="EnseñanzaBasica">E.Basica</option>
+            </select>
+          </div>
+        </div>
+  
+      <br>
+      <div class="row">
+        <div class="col-12 col-md-1 offset-md-3" style="font-weight: bold;">
+          <div class="col-12 col-md-4">
+            <button class="btnGuardar btn btn-success btn-lg">Guardar</button>
+          </div>
+        </div>
+  
+      </div>
+    </form>
+
+    </div>	
+	</body>
+</html>

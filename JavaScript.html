@@ -1,0 +1,175 @@
+<html>
+	<head>
+		<title>Registro Clientes</title>
+		<link rel="icon" type="image/png" href="https://d500.epimg.net/cincodias/imagenes/2015/05/08/pyme/1431098283_691735_1431098420_noticia_normal.jpg">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>		
+		<script src="Formulario_Registro.js"></script>
+		<link rel="stylesheet" href="Formulario_Registro.css">
+		<style>
+			body {
+				background-image: url('https://www.koziel.fr/15809-pdt_1500/plain-dark-gray-jute-canvas-wallpaper.jpg');
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: cover;
+			}
+			div.transbox {
+				margin: 20px;
+				background-color: #ffffff;
+				border: 5px solid black;
+				
+				}
+			</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			  <a class="navbar-brand" href="#">Mi Empresa</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+				  <li class="nav-item active">
+					<a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+				  </li>
+
+				  <li class="nav-item">
+					<a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contacto</a>
+				  </li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+				  <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+				  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+				</form>
+			  </div>
+			</nav>
+		
+		<!-- contenido de la pagina -->
+		<br><br>
+		<div class="row justify-content-center">
+			<h2>Registro de Clientes</h2>
+		</div>
+		<br>
+		<div class="transbox">
+		<div class="row">
+			<div class="col-12 col-md-2 offset-md-3" style="font-weight: bold;"> Correo</div>
+			<div class="col-12 col-md-4">
+				<input type="text" name= "txtCorreo" class="txtCorreo form-control " placeholder="ejemplo: nombre@ejemplo.com">
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-12 col-md-2 offset-md-3" style="font-weight: bold;"> RUN</div>
+			<div class="col-12 col-md-4">
+				<input type="text" name= "txtRUN" class="txtRUN form-control" placeholder="ejemplo: 123456789, sin puntos ni guión" maxlength="9">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-2 offset-md-3" style="font-weight: bold;"> Nombre Completo</div>
+			<div class="col-12 col-md-4">
+				<input type="text" name= "txtNombre" class="txtNombre form-control" placeholder="ejemplo: Juanito Perez Bazcuñán Farías">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-2 offset-md-3" style="font-weight: bold;"> Fecha Nacimiento</div>
+			<div class="col-12 col-md-4">
+				<input type="date" name= "dateFecha" class="dateFecha form-control">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-2 offset-md-3" style="font-weight: bold;"> Teléfono</div>
+			<div class="col-12 col-md-4">
+				<input type="text" name= "txtTelefono" class="txtTelefono form-control" placeholder="ej: 61432567">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-2 offset-md-3" style="font-weight: bold;"> Región</div>
+			<div class="col-12 col-md-4">
+				<select  name= "cmbRegion" class="cmbRegion form-control">
+					<option value="0">Seleccionar</option> ==$0
+					<option value="1">Metropolitana de Santiago</option>
+					<option value="2">Arica y Parinacota</option>
+					<option value="3">Tarapacá</option>
+					<option value="4">Antofagasta</option>
+					<option value="5">Atacama</option>
+					<option value="6">Coquimbo</option>
+					<option value="7">Valparaíso</option>
+					<option value="8">Libertador General Bernardo O’Higgins</option>
+					<option value="9">Maule</option>
+					<option value="10">Ñuble</option>
+					<option value="11">Biobío</option>
+					<option value="12">La Araucanía</option>
+					<option value="13">Los Ríos</option>
+					<option value="14">Los Lagos</option>
+					<option value="15">Aysén del General Carlos Ibáñez del Campo</option>
+					<option value="16">Magallanes y la Antártica Chilena</option>
+				</select>
+			</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-2 offset-md-3" style="font-weight: bold;"> Ciudad</div>
+				<div class="col-12 col-md-4">
+					<select  name= "cmbRegion" class="cmbRegion form-control">
+						<option value="0">Seleccionar</option> ==$0
+						<option value="1">Santiago</option>
+						<option value="2">Valparaíso</option>
+						<option value="3">Concepción</option>
+						<option value="4">La Serena</option>
+						<option value="5">Antofagasta</option>
+						<option value="6">Temuco</option>
+						<option value="7">Iquique</option>
+						<option value="8">Rancagua</option>
+						<option value="9">Puerto Montt</option>
+						<option value="10">Talca</option>
+						<option value="11">Arica</option>
+						<option value="12">Chillán</option>
+						<option value="13">Copiapó</option>
+						<option value="14">Coronel y Lota</option>
+						<option value="15">Calama</option>
+						<option value="16">Valdivia</option>
+						<option value="17">Quillota</option>
+						<option value="18">Osorno</option>
+						<option value="19">Los Ángeles</option>
+						<option value="20">Curicó</option>
+						<option value="21">Punta Arenas</option>
+						<option value="22">San Antonio</option>
+						<option value="23">Ovalle</option>
+						<option value="24">Colina</option>
+						<option value="25">Peñaflor</option>
+						<option value="26">Linares</option>
+						<option value="27">Melipilla</option>
+						<option value="28">Los Andes-Calle Larga</option>
+						<option value="29">Buin</option>
+						<option value="30">San Felipe</option>
+						<option value="31">San Fernando</option>
+						<option value="32">Talagante</option>
+						<option value="33">Limache-Olmué</option>
+						<option value="34">Coyhaique</option>
+					</select>
+				</div>
+				</div>
+
+
+
+
+
+		</div> <!-- Fin de cuadradito blanquito-->
+
+		<!--Botones-->
+		<br><br>
+		<div class="row">
+			<div class="col-12 col-md-1 offset-md-3" style="font-weight: bold;"></div>
+			<div class="col-12 col-md-4"></div>
+				<button class="btnGuardar btn btn-success btn-lg">Guardar</button>
+		</div>
+		</div>
+
+
+
+		</div>	
+	</body>
+</html>
